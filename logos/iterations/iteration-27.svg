@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-286.1 -72.5 567.7 278.5">
+  <rect x="-286.1" y="-72.5" width="567.7" height="278.5" fill="#141414"/>
+  <g id="rules" fill="#8a909a">
+    <rect x="-230.1" y="-16.5" width="455.7" height="3"/>
+    <rect x="-230.1" y="93.5" width="455.7" height="3"/>
+  </g>
+  <g id="wordmark" fill="none" stroke="#f4f4f4" stroke-linejoin="miter" stroke-miterlimit="1.6">
+    <path transform="translate(-230.13,0) scale(0.8)" d="M90.96,21.32 A50,50 0 1 0 100,50 H56" stroke-width="7.00"/>
+    <path transform="translate(-120.13,0) scale(0.8)" d="M0,100 V0 H42 A26,26 0 0 1 42,52 H0 M36,52 L70,100" stroke-width="7.00"/>
+    <path transform="translate(30.00,0) scale(0.8)" d="M0,0 L38,48 L76,0 M38,48 V100" stroke-width="7.00"/>
+    <path id="shared-a" d="M-64.75,150 L0,2 L64.75,150" stroke-width="5"/>
+    <path transform="translate(-114.35,110) scale(0.4)" d="M0,100 V4 L42,76 L84,4 V100" stroke-width="8.50"/>
+    <path transform="translate(80.75,110) scale(0.4)" d="M0,100 V0 H42 A26,26 0 0 1 42,52 H0 M36,52 L70,100" stroke-width="8.50"/>
+    <path transform="translate(124.75,110) scale(0.4)" d="M90.96,21.32 A50,50 0 1 0 100,50 H56" stroke-width="8.50"/>
+    <path transform="translate(180.75,110) scale(0.4)" d="M0,0 V100" stroke-width="8.50"/>
+    <path transform="translate(196.75,110) scale(0.4)" d="M0,100 V4 L72,96 V0" stroke-width="8.50"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+  <g id="wordmark" font-family="'Helvetica Neue', 'Segoe UI', Arial, sans-serif" fill="#1b1e24">
+    <rect x="252" y="144" width="520" height="3" fill="#8a909a"/>
+    <text x="518" y="204" font-size="50" font-weight="300" letter-spacing="12" text-anchor="middle" fill="#8a909a">gray</text>
+    <rect x="252" y="233" width="520" height="3" fill="#8a909a"/>
+    <text x="250" y="360" font-size="140" font-weight="600" textLength="522" lengthAdjust="spacing">margin</text>
+  </g>
+</svg>

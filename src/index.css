@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* Manual theme switching: the `dark:` variant follows the attribute we set on <html>,
+   not the OS setting, so the toggle can override the system preference. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* `inline` keeps these as var() references in the generated utilities, so every
+   bg-surface / text-fg flips automatically when the attribute changes. */
+@theme inline {
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --color-canvas: var(--app-canvas);
+  --color-surface: var(--app-surface);
+  --color-fg: var(--app-fg);
+  --color-muted: var(--app-muted);
+  --color-faint: var(--app-faint);
+  --color-line: var(--app-line);
+  --color-accent: var(--app-accent);
+  --color-accent-fg: var(--app-accent-fg);
+  --color-accent-soft: var(--app-accent-soft);
+  --color-positive: var(--app-positive);
+  --color-positive-soft: var(--app-positive-soft);
+}
+
+:root {
+  --app-canvas: #f6f7f9;
+  --app-surface: #ffffff;
+  --app-fg: #0f172a;
+  --app-muted: #5b6577;
+  --app-faint: #8b95a7;
+  --app-line: #e4e8ee;
+  --app-accent: #4f46e5;
+  --app-accent-fg: #ffffff;
+  --app-accent-soft: #eef0ff;
+  --app-positive: #047857;
+  --app-positive-soft: #e6f5ef;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --app-canvas: #0d1017;
+  --app-surface: #151a23;
+  --app-fg: #e8ebf1;
+  --app-muted: #9aa5b8;
+  --app-faint: #6f7b8f;
+  --app-line: #262e3b;
+  --app-accent: #818cf8;
+  --app-accent-fg: #10131c;
+  --app-accent-soft: #1c2133;
+  --app-positive: #34d399;
+  --app-positive-soft: #10231d;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--app-canvas);
+  color: var(--app-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--app-line);
+  border-radius: 999px;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.3s ease-out both;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+/* React Flow paints its controls light by default. */
+.react-flow__controls-button {
+  background: var(--app-surface);
+  border-bottom: 1px solid var(--app-line);
+  color: var(--app-fg);
+}
+.react-flow__controls-button:hover {
+  background: var(--app-accent-soft);
+}
+.react-flow__controls-button svg {
+  fill: currentColor;
+}

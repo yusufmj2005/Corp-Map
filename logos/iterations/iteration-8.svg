@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+  <g id="icon" transform="translate(130,144)">
+    <polyline points="11,219 100,28 189,219" fill="none" stroke="#1b1e24" stroke-width="22" stroke-linejoin="miter"/>
+  </g>
+  <g id="wordmark" font-family="'Helvetica Neue', 'Segoe UI', Arial, sans-serif" fill="#1b1e24">
+    <rect x="380" y="144" width="520" height="3" fill="#4f6583"/>
+    <text x="380" y="207" font-size="44" font-weight="400" textLength="520" lengthAdjust="spacing" fill="#4f6583">GRAY</text>
+    <rect x="380" y="233" width="520" height="3" fill="#4f6583"/>
+    <text x="380" y="368" font-size="120" font-weight="400" textLength="520" lengthAdjust="spacing">MARGIN</text>
+  </g>
+</svg>

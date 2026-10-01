@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+  <g id="wordmark" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="150" font-weight="600" fill="#2b2d31">
+    <text x="132" y="276" textLength="760" lengthAdjust="spacing">gr<tspan font-weight="200" fill="#5b6f8c">A</tspan>ymargin</text>
+    <rect x="132" y="338" width="760" height="5" fill="#8a909a"/>
+    <rect x="132" y="354" width="760" height="5" fill="#8a909a"/>
+  </g>
+</svg>
