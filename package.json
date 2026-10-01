@@ -1,15 +1,42 @@
 {
-  "name": "issu-s-website",
+  "name": "corpmap",
   "private": true,
   "version": "1.0.0",
+  "description": "Explore who owns whom: search listed and private companies worldwide and map their parents, subsidiaries and brands.",
+  "keywords": [
+    "companies",
+    "ownership",
+    "corporate-structure",
+    "subsidiaries",
+    "brands",
+    "wikidata",
+    "react",
+    "vite",
+    "flow-chart"
+  ],
+  "homepage": "https://github.com/yusufmj2005/Corp-Map#readme",
+  "bugs": {
+    "url": "https://github.com/yusufmj2005/Corp-Map/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusufmj2005/Corp-Map.git"
+  },
+  "license": "MIT",
+  "author": "Yusuf",
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "concurrently -n web,api -c cyan,magenta \"vite\" \"npm run dev:api\"",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
-    "preview": "vite preview",
     "dev:web": "vite",
     "dev:api": "tsx watch server/index.ts",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --noEmit",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "start": "tsx server/index.ts",
     "start:api": "tsx server/index.ts"
   },
   "dependencies": {
