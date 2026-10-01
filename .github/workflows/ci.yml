@@ -24,7 +24,10 @@ jobs:
           node-version: 24
           cache: npm
 
-      - run: npm ci
+      # `npm ci` rejects lockfiles generated on Windows because npm omits the bundled
+      # @emnapi/* peers of @tailwindcss/oxide-wasm32-wasi there. `npm install` still
+      # honours the lockfile versions but tolerates that gap.
+      - run: npm install --no-audit --no-fund
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run build
