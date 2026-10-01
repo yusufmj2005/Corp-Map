@@ -1,7 +1,7 @@
 {
   "name": "issu-s-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently -n web,api -c cyan,magenta \"vite\" \"npm run dev:api\"",
